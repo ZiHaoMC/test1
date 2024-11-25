@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.greencat.shimmer.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ClientConnectionMixin",
+    "ClientPlayerEntityMixin",
+    "EntityRendererMixin",
+    "InGameHudMixin",
+    "KeyBindAccessor",
+    "KeyboardMixin",
+    "MinecraftClientMixin",
+    "MixinCamera",
+    "MixinEntityRendererDispatcher",
+    "ScreenMixin",
+    "TelemetryManagerMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "PlayerMoveC2SPacketAccessor",
+    "TextVisitFactoryMixin"
+  ],
+  "refmap": "shimmer-refmap.json"
+}

@@ -1,0 +1,77 @@
+{
+  "mappings": {
+    "baritone/launch/mixins/MixinLootContext": {
+      "net/minecraft/server/level/ServerLevel.getServer()Lnet/minecraft/server/MinecraftServer;": "Land;o()Lnet/minecraft/server/MinecraftServer;",
+      "create": "Legw$a;a(Ljava/util/Optional;)Legw;",
+      "Lnet/minecraft/server/MinecraftServer;getLootData()Lnet/minecraft/world/level/storage/loot/LootDataManager;": "Lnet/minecraft/server/MinecraftServer;aJ()Legz;"
+    },
+    "baritone/launch/mixins/MixinItemStack": {
+      "setDamageValue": "Lcmy;b(I)V"
+    },
+    "baritone/launch/mixins/MixinClientPlayNetHandler": {
+      "sendChat(Ljava/lang/String;)V": "Lfnt;b(Ljava/lang/String;)V",
+      "handleLevelChunkWithLight": "Lfnt;a(Laak;)V",
+      "handleForgetLevelChunk": "Lfnt;a(Laae;)V",
+      "handleBlockUpdate": "Lfnt;a(Lzj;)V",
+      "handleChunkBlocksUpdate": "Lfnt;a(Labn;)V",
+      "Lnet/minecraft/client/player/LocalPlayer;shouldShowDeathScreen()Z": "Lfsj;o()Z",
+      "handlePlayerCombatKill": "Lfnt;a(Labc;)V"
+    },
+    "baritone/launch/mixins/MixinPlayerController": {
+      "isDestroying": "i:Z",
+      "destroyBlockPos": "d:Lhx;",
+      "ensureHasSentCarriedItem": "o()V"
+    },
+    "baritone/launch/mixins/MixinScreen": {
+      "openLink": "a(Ljava/net/URI;)V",
+      "handleComponentClicked": "Lfdb;a(Lwc;)Z"
+    },
+    "baritone/launch/mixins/MixinMinecraft": {
+      "net/minecraft/client/Minecraft.screen:Lnet/minecraft/client/gui/screens/Screen;": "Levi;y:Lfdb;",
+      "net/minecraft/client/Minecraft.missTime:I": "Levi;w:I",
+      "tick": "Levi;s()V",
+      "net/minecraft/client/multiplayer/ClientLevel.tickEntities()V": "Lfns;f()V",
+      "setLevel": "Levi;a(Lfns;)V",
+      "Lnet/minecraft/client/Minecraft;screen:Lnet/minecraft/client/gui/screens/Screen;": "Levi;y:Lfdb;",
+      "Lnet/minecraft/client/gui/components/DebugScreenOverlay;showDebugScreen()Z": "Lexo;d()Z"
+    },
+    "baritone/launch/mixins/MixinNetworkManager": {
+      "sendPacket": "Lug;b(Lxf;Lup;Z)V",
+      "net/minecraft/network/Connection.genericsFtw(Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketListener;)V": "Lug;a(Lxf;Luo;)V",
+      "channelRead0": "Lug;a(Lio/netty/channel/ChannelHandlerContext;Lxf;)V"
+    },
+    "baritone/launch/mixins/MixinWorldRenderer": {
+      "renderLevel": "Lftf;a(Leqb;FJZLeut;Lfta;Lftg;Lorg/joml/Matrix4f;)V"
+    },
+    "baritone/launch/mixins/MixinEntity": {
+      "moveRelative": "Lblv;a(FLelt;)V"
+    },
+    "baritone/launch/mixins/MixinClientPlayerEntity": {
+      "net/minecraft/client/player/AbstractClientPlayer.tick()V": "Lfsg;l()V",
+      "tick": "Lfsj;l()V",
+      "net/minecraft/world/entity/player/Abilities.mayfly:Z": "Lcff;c:Z",
+      "aiStep": "Lfsj;d_()V",
+      "net/minecraft/client/KeyMapping.isDown()Z": "Levg;e()Z",
+      "rideTick": "Lfsj;t()V",
+      "Lnet/minecraft/client/player/LocalPlayer;tryToStartFallFlying()Z": "Lfsj;fX()Z"
+    },
+    "baritone/launch/mixins/MixinLivingEntity": {
+      "jumpFromGround": "Lbml;fb()V",
+      "net/minecraft/world/entity/LivingEntity.getYRot()F": "Lbml;dC()F",
+      "net/minecraft/world/entity/LivingEntity.getLookAngle()Lnet/minecraft/world/phys/Vec3;": "Lbml;bF()Lelt;",
+      "travel": "Lbml;a(Lelt;)V",
+      "net/minecraft/world/entity/LivingEntity.move(Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V": "Lbml;a(Lbmr;Lelt;)V"
+    },
+    "baritone/launch/mixins/MixinChunkArray": {
+      "net.minecraft.client.multiplayer.ClientChunkCache$Storage": "fno$a"
+    },
+    "baritone/launch/mixins/MixinPalettedContainer$Data": {
+      "net/minecraft/world/level/chunk/PalettedContainer$Data": "dlw$c",
+      "palette": "c:Ldlu;",
+      "storage": "b:Late;"
+    },
+    "baritone/launch/mixins/MixinCommandSuggestionHelper": {
+      "updateCommandInfo": "Lexj;d()V"
+    }
+  }
+}
