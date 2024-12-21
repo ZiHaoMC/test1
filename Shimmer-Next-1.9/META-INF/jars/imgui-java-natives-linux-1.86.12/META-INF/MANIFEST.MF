@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: imgui-binding-natives
+Automatic-Module-Name: imgui.natives.linux
+Implementation-Version: 1.86.12
+Build-Timestamp: 2024-08-07T09:02:27.458+0000
+Build-Revision: d00f7b5a12344afcda71c11c1951eac0652a1556
+Build-Jdk: 1.8.0_422 (BellSoft)
+Created-By: Gradle 7.4.2
+

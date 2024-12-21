@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "io_github_spair_imgui-java-natives-linux",
+  "version": "1.86.12",
+  "name": "imgui-java-natives-linux",
+  "custom": {
+    "fabric-loom:generated": true
+  }
+}

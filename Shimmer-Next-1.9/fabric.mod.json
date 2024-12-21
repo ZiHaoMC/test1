@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "shimmer",
+  "version": "1.9",
+  "name": "ShimmerNext",
+  "description": "Minecraft High Version QOL Mod",
+  "authors": [
+    "GreenCat"
+  ],
+  "contact": {
+    "website": "",
+    "repo": ""
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/shimmer/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.greencat.shimmer.Shimmer"
+    ]
+  },
+  "mixins": [
+    "shimmer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.14.23",
+    "minecraft": "\u003e\u003d1.20"
+  },
+  "accessWidener": "shimmer.accesswidener",
+  "jars": [
+    {
+      "file": "META-INF/jars/imgui-java-binding-1.86.12.jar"
+    },
+    {
+      "file": "META-INF/jars/imgui-java-lwjgl3-1.86.12.jar"
+    },
+    {
+      "file": "META-INF/jars/imgui-java-natives-linux-1.86.12.jar"
+    },
+    {
+      "file": "META-INF/jars/imgui-java-natives-macos-1.86.12.jar"
+    },
+    {
+      "file": "META-INF/jars/imgui-java-natives-windows-1.86.12.jar"
+    }
+  ]
+}
